@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+:root { 
+  --ink: #0d1b2a; 
+  --muted: #415a77; 
+  --surface: #f4f7f6; 
+  --accent: #0077b6; 
+  --line: #e2eafc; 
+  color: var(--ink); 
+  background: var(--surface); 
+  font-family: "DM Sans", sans-serif; 
+  font-synthesis: none; 
+  text-rendering: optimizeLegibility; 
+  -webkit-font-smoothing: antialiased; 
+}
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+#root {
+  min-height: 100vh;
+}
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.neo {
+  box-shadow:
+    8px 8px 16px #cbd0d8,
+    -8px -8px 16px #fff;
+}
+.neo-inset {
+  box-shadow:
+    inset 4px 4px 9px #cbd0d8,
+    inset -4px -4px 9px #fff;
+}
+.neo-button {
+  box-shadow:
+    5px 5px 10px #cbd0d8,
+    -5px -5px 10px #fff;
+}
+.neo-button:active {
+  box-shadow:
+    inset 3px 3px 7px #cbd0d8,
+    inset -3px -3px 7px #fff;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--ink);
+  background: var(--surface);
+  box-shadow:
+    inset 3px 3px 7px #cbd0d8,
+    inset -3px -3px 7px #fff;
+}
+.icon-button {
+  display: inline-flex;
+  border: 0;
+  padding: 0.6rem;
+  color: var(--muted);
+  background: transparent;
+}
+.avatar {
+  display: grid;
+  height: 2.25rem;
+  width: 2.25rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+}
