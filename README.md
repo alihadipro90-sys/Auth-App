@@ -73,8 +73,8 @@ flowchart LR
     Users --> Client
     Client -->|credentials: include| API[Express REST API]
     API --> CORS[CORS Policy]
-    API --> AuthRoutes[/api/auth]
-    API --> UserRoutes[/api/users]
+    API --> AuthRoutes["/api/auth"]
+    API --> UserRoutes["/api/users"]
     AuthRoutes --> AuthController[Auth Controller]
     UserRoutes --> UserAuth[JWT Auth Middleware]
     UserAuth --> Admin[Admin RBAC Middleware]

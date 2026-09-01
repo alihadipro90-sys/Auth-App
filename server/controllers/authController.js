@@ -18,7 +18,7 @@ export const register = async (req, res) => {
             name,
             email,
             password: await bcrypt.hash(password, 10),
-            role: 'Admin'
+            role: 'Viewer'
         });
 
         setAuthCookie(res, createAuthToken(user._id));

@@ -56,7 +56,7 @@ export default function Dashboard() {
         <div className="mb-6 flex items-center justify-between">
           <div>
             <p className="text-xs font-bold uppercase tracking-[.18em] text-(--accent)">
-              Access health
+              Access health of App
             </p>
             <h3 className="mt-2 text-xl font-bold">
               Permissions are in good shape
